@@ -6,12 +6,12 @@
 name: Semgrep
 
 on: 
-    # Run on all pull requests. Returns the results introduced by the PR.
-    pull_request: {}
+  # Run on all pull requests. Returns the results introduced by the PR.
+  pull_request: {}
 
-    # Run on merges. Returns all results.
-    #push:
-    #    branches: ["master"]
+  # Run on merges. Returns all results.
+  #push:
+  #    branches: ["master"]
 
 jobs:
   semgrep:
