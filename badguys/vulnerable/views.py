@@ -33,7 +33,6 @@ def sql(request):
 
 def foo():
     x == x
-    y == y
 
 
 def file_access(request):
