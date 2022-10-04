@@ -19,7 +19,7 @@ def sql(request):
         "SELECT id from Users where first_name = ''; " "DROP TABLE Users;--';"
     )
     expected_sql = "'; DROP TABLE Users;--"
-
+    useless_var = 1
     name = request.POST["name"] if request.method is "POST" else ""
     correct = norm(name) == norm(expected_sql)
 
